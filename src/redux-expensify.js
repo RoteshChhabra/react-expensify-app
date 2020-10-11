@@ -4,7 +4,7 @@ import uuid from 'uuid';
 //Add_Expense
 const addExpense =(
     {description ='',
-     note ='' , 
+     notes ='' , 
      amount = 0, 
      createdAt = 0} ={}
         ) => ({
@@ -52,7 +52,7 @@ const demoState= {
     expenses:[{
         id: 'ddds',
         description:'dsds',
-        note :'last bill',
+        notes :'last bill',
         amount: 54500,
         createdAt: 0
 

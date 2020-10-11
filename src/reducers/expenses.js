@@ -9,7 +9,7 @@ switch(action.type){
   case 'ADD_EXPENSE':
     return [
       ...state,
-      action.expenses
+      action.expense
     ];
     case 'REMOVE_EXPENSE':
       return state.filter(({id}) => id!==action.id );
@@ -18,12 +18,14 @@ switch(action.type){
           if(expense.id===action.id){
             return {
               ...expense,
-              ...action.update
+              ...action.updates
             };
           } else{
-            return state;
+            return expense;
           };
       });
+      case 'SET_EXPENSES':
+        return action.expenses;
   default:
     return state;
 }

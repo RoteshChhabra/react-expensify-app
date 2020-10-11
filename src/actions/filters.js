@@ -5,25 +5,23 @@ export const setTextFilter =(text='')=>({
   });
   
   //SORT_BY_AMOUNT
-  export const sortByAmount = (sortBy='Amount')=> ({
+  export const sortByAmount = ()=> ({
     type:'SORT_BY_AMOUNT',
-    sortBy
   });
   
   //SORT_BY_DATE
-  export const sortByDate = (sortBy='Date')=> ({
+  export const sortByDate = ()=> ({
     type:'SORT_BY_DATE',
-    sortBy
   });
   
   //SET_START_DATE
-  export const setStartDate =(startDate=undefined)=>({
+  export const setStartDate =(startDate)=>({
     type:'SET_START_DATE',
     startDate
   });
   
   //SET_END_DATE
-  export const setEndDate =(endDate=undefined)=>({
+  export const setEndDate =(endDate)=>({
     type:'SET_END_DATE',
     endDate
   });

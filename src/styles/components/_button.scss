@@ -1,0 +1,21 @@
+.button{
+    background:#6495ED;
+    color: white;
+    border: none;
+    display: inline-block;
+    padding: $s-size;
+    line-height: 1;
+    font-weight: 300;
+    font-size: 1.4rem;
+    text-decoration: none;
+    
+}
+
+.button--back{
+
+    background: none;
+}
+
+.button--secondary{
+    background: #888;
+}

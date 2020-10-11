@@ -14,7 +14,7 @@ import uuid from 'uuid'
 
 //ADD_EXPENSE
 const addExpense = (
-  {description='', note='', amount=0, createdAt =0} ={}
+  {description='', notes='', amount=0, createdAt =0} ={}
 )=> ({
   type:'ADD_EXPENSE',
   expenses:{
@@ -201,7 +201,7 @@ const demoState= {
   expenses:[{
     id:'dsds',
     description:'Jan Rent',
-    note:' Final payment',
+    notes:' Final payment',
     amount:54500,
     createdAt:0
   }],
